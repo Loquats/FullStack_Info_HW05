@@ -31,9 +31,7 @@ def logout():
 
 @app.route('/submit-survey', methods=['GET', 'POST'])
 def submitSurvey():
-    print("submitSurvey function")
     if 'username' in session: #check if user in session
-        print("submitSurvey in session")
         username = session.get('username')
         surveyResponse = {}
         # get the rest of responses from users using request library Hint: ~3 lines of code
@@ -42,7 +40,6 @@ def submitSurvey():
         surveyResponse['vacation'] = request.form.get('vacation')
         surveyResponse['fe-before'] = request.form.get('feBefore')
         surveyResponse['fe-after'] = request.form.get('feAfter')
-        print("submitSurvey done session")
         return render_template('results.html', username=session['username'], surveyResponse=surveyResponse) # pass in variables to the template
     else:
         return render_template('login.html')

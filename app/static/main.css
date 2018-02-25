@@ -120,7 +120,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .action-button {
-	margin-left: 2rem;
+	/*margin-left: 2rem;*/
 	background-color: #00bf6f;
 	border: none;
 	border-bottom: 3px solid #16a085;
@@ -135,21 +135,21 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .action-button:hover {
-	background-color: #00bf6f;
+	background-color: #11cf7f;
 }
 
 #site-title-wrapper {
 	display: inline-block;
 	height: 5rem;
-	width: 15%;
+	width: 50%;
 }
 
 #site-icon-wrapper {
 	display: inline-block;
-	margin-left: 1rem;
-	margin-top: -.5rem;
+	margin-left: 0rem;
+	margin-top: 0rem;
 	vertical-align: middle;
-	width: 2.5rem;
+	width: 7.5rem;
 }
 
 #site-icon-wrapper img {
@@ -246,4 +246,12 @@ input[type=range]::-webkit-slider-runnable-track {
 	background-color: #fff;
 	padding: 8px 12px;
 	line-height: 1.4;
+}
+
+.login-form {
+	text-align: center;
+}
+
+.login-form-child {
+	margin: 10px;
 }

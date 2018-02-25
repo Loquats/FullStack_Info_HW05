@@ -5,7 +5,6 @@ $("#submit-survey").on("click", function submitSurvey() {
 	var feBefore = $("input[name=front-end-before]").val();
 	var feAfter = $("input[name=front-end-after]").val();
 
-	console.log("clicked!!!");
 	$.post("/submit-survey",
 		{"color": color,
 		"food": food,
@@ -13,7 +12,6 @@ $("#submit-survey").on("click", function submitSurvey() {
 		"feBefore": feBefore,
 		"feAfter": feAfter},
 		function(data) {
-			console.log("got data!!!");
 			$("html").html(data);
 		});
 });

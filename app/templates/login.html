@@ -11,14 +11,14 @@
 <div class="main-container">
 	<h3>Let's get you logged in</h3>
 	<!-- 3. needs to modify the form attributes here -->
-	<form action="/login" method="POST"> 
+	<form class="login-form" action="/login" method="POST"> 
 		<!-- 4. add some input/labels here -->
-		<p> Username: </p>
-		<p> <input type="text" name="username"/> </p>
-		<p> Email: </p>
-		<p> <input type="text" name="email"/> </p>
+		<p class="login-form-child"> Username: </p>
+		<p class="login-form-child"> <input type="text" name="username"/> </p>
+		<p class="login-form-child"> Email: </p>
+		<p class="login-form-child"> <input type="text" name="email"/> </p>
 		
-		<p> <input class="action-button" id="login" type="submit" value="Submit"> </p>
+		<p class="login-form-child"> <input class="action-button" id="login" type="submit" value="Submit"> </p>
 	</form>
 </div>
 {% endblock %}
